@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@source "../../**/*.{html,php,js}";
+@font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  /* CeraPro Light */
+  @font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  /* CeraPro Regular */
+  @font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  /* CeraPro Medium */
+  @font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  /* CeraPro Bold */
+  @font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  /* CeraPro Black */
+  @font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'CeraPro';
+    src: url('../fonts/CeraPro-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+body {
+    font-family: 'CeraPro', sans-serif;
+  }

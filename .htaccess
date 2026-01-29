@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Serve existing files/folders as-is
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^([a-z0-9_-]+)/([a-z0-9_-]+)/?$ backend/model.php?brand=$1&slug=$2 [L,QSA,NC]
+
+RewriteRule ^([a-z0-9_-]+)/?$ backend/brand.php?slug=$1 [L,QSA,NC]
