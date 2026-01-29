@@ -86,7 +86,7 @@ if (!$model) {
     
     <?php include '../components/header.php'; ?>
 
-    <main>
+    <main class="overflow-x-hidden">
         <!-- Model Hero Section -->
         <section class="relative mx-auto max-w-6xl px-4 pb-32 pt-24">
             <!-- Breadcrumbs -->
