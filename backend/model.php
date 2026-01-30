@@ -149,13 +149,14 @@ if (!$model) {
 
                 <!-- Gallery Section -->
                 <div class="space-y-12">
-                    <div class="flex items-center justify-between border-b border-white/5 pb-8">
+                    <div class="flex items-center justify-between border-b border-white/5 pb-10">
                         <h2 class="text-3xl font-bold text-white tracking-tight italic">Результат работы</h2>
                         <span class="text-[10px] uppercase tracking-[0.4em] text-slate-600 font-bold">Фотогалерея (До / После)</span>
                     </div>
 
                     <?php if ($photos): ?>
-                        <div class="grid gap-6 md:grid-cols-2">
+                        <div class="grid gap-6 md:grid-cols-2"
+                        >
                             <?php foreach ($photos as $photo): ?>
                                 <div class="group relative overflow-hidden rounded-[32px] border border-white/10 bg-slate-900 transition-all duration-700 hover:border-cyan-500/50">
                                     <img src="<?= htmlspecialchars($photo['photo_path']) ?>" alt="<?= htmlspecialchars($model['name']) ?>" 
@@ -192,15 +193,25 @@ if (!$model) {
                 <?php endif; ?>
 
                 <!-- Contact Card -->
-                <div class="sticky top-24 rounded-[40px] border border-cyan-500/20 bg-cyan-500/5 p-12 backdrop-blur-xl space-y-8">
-                    <div class="space-y-2">
-                        <h4 class="text-2xl font-bold text-white tracking-tight italic">Нужна такая же работа?</h4>
-                        <p class="text-sm text-slate-400 leading-relaxed">Оставьте заявку, и мы проконсультируем вас по стоимости и срокам для вашего авто.</p>
-                    </div>
-                    <a href="#contacts" class="flex items-center justify-center gap-4 rounded-full bg-white px-8 py-5 text-xs font-black uppercase tracking-[0.2em] text-slate-950 transition hover:bg-cyan-400">
-                        Связаться с нами
-                    </a>
-                </div>
+             <div class="sticky top-24 rounded-[32px] bg-cyan-500/5 p-12 backdrop-blur-xl space-y-8 shadow-xl"
+             style="box-shadow: 0 25px 50px -12px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06), 0 0 80px -10px rgba(34,211,238,0.35);">
+    <div class="space-y-2">
+        <h4 class="text-2xl font-bold text-white tracking-tight italic">
+            Нужна такая же работа?
+        </h4>
+        <p class="text-sm text-slate-400 leading-relaxed">
+            Оставьте заявку, и мы проконсультируем вас по стоимости и срокам для вашего авто.
+        </p>
+    </div>
+
+    <a href="#contacts"
+       class="flex items-center justify-center gap-4 rounded-full bg-white px-8 py-5
+              text-xs font-black uppercase tracking-[0.2em] text-slate-950
+              transition hover:bg-cyan-400">
+        Связаться с нами
+    </a>
+</div>
+
                 </div>
             </div>
         </div>
